@@ -1,0 +1,484 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+    <title>SIH 2K20</title>
+      <style>
+          .col-md-3
+          {
+          display: inline-block;
+          margin-left:-4px;
+          }
+          .carousel-indicators .active {
+          background-color: blue;
+            }
+          .col-md-3 img{
+          width:100%;
+          height:auto;
+          }
+          body .carousel-indicator li{
+          background-color: blue;
+          }
+          body .carousel-indicators{
+          bottom: 0;
+          }
+          body .carousel-control-prev-icon,
+          body .carousel-control-next-icon{
+          background-color: blue;
+          }
+           body .no-padding{
+           padding-left: 0,
+           padding-right: 0;
+           }
+  </style>
+  </head>
+  <body>
+  {% load static %}
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">EK YOJANA</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#Home">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#Link">Link</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav>
+<form action="/second" method="get">
+<div class="container" id="Home">
+<div id="demo" class="carousel slide my-3" data-ride="carousel">
+    <ul class="carousel-indicators">
+      <li data-target="#demo" data-slide-to="0" class="active"></li>
+      <li data-target="#demo" data-slide-to="1" ></li>
+      <li data-target="#demo" data-slide-to="2" ></li>
+      <li data-target="#demo" data-slide-to="3" ></li>
+      <li data-target="#demo" data-slide-to="4" ></li>
+      <li data-target="#demo" data-slide-to="5" ></li>
+      <li data-target="#demo" data-slide-to="6" ></li>
+      <li data-target="#demo" data-slide-to="7" ></li>
+      <li data-target="#demo" data-slide-to="8" ></li>
+    </ul>
+
+    <!--Slideshow starts here -->
+    <div class="container carousel-inner no-padding" id="Link">
+
+      <div class="carousel-item active">
+        <div class="col-xs-3 col-sm-3 col-md-3">
+          <div class="card" style="width: 18rem;">
+            <img src="{% static 'team/andhra.png' %}" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Andhra Pradesh</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <button type="submit" class="btn btn-primary" value="Andhra Pradesh" name="state">Schemes</button>
+              <a class="btn btn-primary" href="https://hospitals.pmjay.gov.in/Search/empnlWorkFlow.htm?actionFlag=ViewRegisteredHosptlsNew">Facilities</a>
+            </div>
+          </div>
+       </div>
+
+        <div class="col-xs-3 col-sm-3 col-md-3">
+          <div class="card" style="width: 18rem;">
+            <img  src="{% static 'team/arunacha.png' %}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Arunachal Pradesh</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <button type="submit" class="btn btn-primary" value="Arunachal Pradesh" name="state">Schemes</button>
+              <a class="btn btn-primary" href="https://hospitals.pmjay.gov.in/Search/empnlWorkFlow.htm?actionFlag=ViewRegisteredHosptlsNew">Facilities</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-3 col-sm-3 col-md-3">
+          <div class="card" style="width: 18rem;">
+            <img  src="{% static 'team/assam.png' %}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Assam</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <button type="submit" class="btn btn-primary" value="Assam" name="state">Schemes</button>
+              <a class="btn btn-primary" href="https://hospitals.pmjay.gov.in/Search/empnlWorkFlow.htm?actionFlag=ViewRegisteredHosptlsNew">Facilities</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-3 col-sm-3 col-md-3">
+          <div class="card" style="width: 18rem;">
+            <img  src="{% static 'team/bihar.png' %}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Bihar</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <button type="submit" class="btn btn-primary" value="Bihar" name="state">Schemes</button>
+              <a class="btn btn-primary" href="https://hospitals.pmjay.gov.in/Search/empnlWorkFlow.htm?actionFlag=ViewRegisteredHosptlsNew">Facilities</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="carousel-item">
+        <div class="col-xs-3 col-sm-3 col-md-3">
+          <div class="card" style="width: 18rem;">
+            <img  src="{% static 'team/chandigarh.png' %}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Chandigarh</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <button type="submit" class="btn btn-primary" value="Chandigarh" name="state">Schemes</button>
+              <a class="btn btn-primary" href="https://hospitals.pmjay.gov.in/Search/empnlWorkFlow.htm?actionFlag=ViewRegisteredHosptlsNew">Facilities</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-3 col-sm-3 col-md-3">
+          <div class="card" style="width: 18rem;">
+            <img  src="{% static 'team/chattis.png' %}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Chattisgarh</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <button type="submit" class="btn btn-primary" value="Chattisgarh" name="state">Schemes</button>
+              <a class="btn btn-primary" href="https://hospitals.pmjay.gov.in/Search/empnlWorkFlow.htm?actionFlag=ViewRegisteredHosptlsNew">Facilities</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-3 col-sm-3 col-md-3">
+          <div class="card" style="width: 18rem;">
+            <img  src="{% static 'team/dlh.png' %}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Delhi</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <button type="submit" class="btn btn-primary" value="Delhi" name="state">Schemes</button>
+              <a class="btn btn-primary" href="https://hospitals.pmjay.gov.in/Search/empnlWorkFlow.htm?actionFlag=ViewRegisteredHosptlsNew">Facilities</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-3 col-sm-3 col-md-3">
+          <div class="card" style="width: 18rem;">
+            <img  src="{% static 'team/goa.png' %}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Goa</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <button type="submit" class="btn btn-primary" value="Goa" name="state">Schemes</button>
+              <a class="btn btn-primary" href="https://hospitals.pmjay.gov.in/Search/empnlWorkFlow.htm?actionFlag=ViewRegisteredHosptlsNew">Facilities</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="col-xs-3 col-sm-3 col-md-3">
+          <div class="card" style="width: 18rem;">
+            <img  src="{% static 'team/gujarat.png' %}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Gujrat</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <button type="submit" class="btn btn-primary" value="Gujrat" name="state">Schemes</button>
+              <a class="btn btn-primary" href="https://hospitals.pmjay.gov.in/Search/empnlWorkFlow.htm?actionFlag=ViewRegisteredHosptlsNew">Facilities</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-3 col-sm-3 col-md-3">
+          <div class="card" style="width: 18rem;">
+            <img src="{% static 'team/har.png' %}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Haryana</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <button type="submit" class="btn btn-primary" value="Haryana" name="state">Schemes</button>
+              <a class="btn btn-primary" href="https://hospitals.pmjay.gov.in/Search/empnlWorkFlow.htm?actionFlag=ViewRegisteredHosptlsNew">Facilities</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-3 col-sm-3 col-md-3">
+          <div class="card" style="width: 18rem;">
+            <img  src="{% static 'team/andhra.png' %}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Himachal Pradesh</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <button type="submit" class="btn btn-primary" value="Himachal Pradesh" name="state">Schemes</button>
+              <a class="btn btn-primary" href="https://hospitals.pmjay.gov.in/Search/empnlWorkFlow.htm?actionFlag=ViewRegisteredHosptlsNew">Facilities</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-3 col-sm-3 col-md-3">
+          <div class="card" style="width: 18rem;">
+            <img src="{% static 'team/jnk.png' %}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Jammu & Kashmir</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <button type="submit" class="btn btn-primary" value="Jammu Kashmir" name="state">Schemes</button>
+              <a class="btn btn-primary" href="https://hospitals.pmjay.gov.in/Search/empnlWorkFlow.htm?actionFlag=ViewRegisteredHosptlsNew">Facilities</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="col-xs-3 col-sm-3 col-md-3">
+          <div class="card" style="width: 18rem;">
+            <img  src="{% static 'team/jharkhand.png' %}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Jharkhand</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <button type="submit" class="btn btn-primary" value="Jharkhand" name="state">Schemes</button>
+              <a class="btn btn-primary" href="https://hospitals.pmjay.gov.in/Search/empnlWorkFlow.htm?actionFlag=ViewRegisteredHosptlsNew">Facilities</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-3 col-sm-3 col-md-3">
+          <div class="card" style="width: 18rem;">
+            <img src="{% static 'team/karnataka.png' %}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Karnataka</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <button type="submit" class="btn btn-primary" value="Karnataka" name="state">Schemes</button>
+              <a class="btn btn-primary" href="https://hospitals.pmjay.gov.in/Search/empnlWorkFlow.htm?actionFlag=ViewRegisteredHosptlsNew">Facilities</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-3 col-sm-3 col-md-3">
+          <div class="card" style="width: 18rem;">
+            <img  src="{% static 'team/kerela.png' %}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Kerala</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <button type="submit" class="btn btn-primary" value="Kerala" name="state"> Schemes</button>
+              <a class="btn btn-primary" href="https://hospitals.pmjay.gov.in/Search/empnlWorkFlow.htm?actionFlag=ViewRegisteredHosptlsNew">Facilities</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-3 col-sm-3 col-md-3">
+          <div class="card" style="width: 18rem;">
+            <img  src="{% static 'team/lakswadeep.png' %}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Lakshdweep</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <button type="submit" class="btn btn-primary" value="Lakshdweep" name="state">Schemes</button>
+              <a class="btn btn-primary" href="https://hospitals.pmjay.gov.in/Search/empnlWorkFlow.htm?actionFlag=ViewRegisteredHosptlsNew">Facilities</a>
+            </div>
+          </div>
+        </div>
+      </div>
+  <div class="carousel-item">
+        <div class="col-xs-3 col-sm-3 col-md-3">
+          <div class="card" style="width: 18rem;">
+            <img  src="{% static 'team/madhya.png' %}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Madhya Pradesh</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <button type="submit" class="btn btn-primary" value="Madhya Pradesh" name="state">Schemes</button>
+              <a class="btn btn-primary" href="https://hospitals.pmjay.gov.in/Search/empnlWorkFlow.htm?actionFlag=ViewRegisteredHosptlsNew">Facilities</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-3 col-sm-3 col-md-3">
+          <div class="card" style="width: 18rem;">
+            <img src="{% static 'team/maha.png' %}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Maharashtra</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <button type="submit" class="btn btn-primary" value="Maharashtra" name="state">Schemes</button>
+              <a class="btn btn-primary" href="https://hospitals.pmjay.gov.in/Search/empnlWorkFlow.htm?actionFlag=ViewRegisteredHosptlsNew">Facilities</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-3 col-sm-3 col-md-3">
+          <div class="card" style="width: 18rem;">
+            <img  src="{% static 'team/manipur.png' %}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Manipur</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <button type="submit" class="btn btn-primary" value="Manipur" name="state">Schemes</button>
+              <a class="btn btn-primary" href="https://hospitals.pmjay.gov.in/Search/empnlWorkFlow.htm?actionFlag=ViewRegisteredHosptlsNew">Facilities</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-3 col-sm-3 col-md-3">
+          <div class="card" style="width: 18rem;">
+            <img  src="{% static 'team/megha.png' %}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Meghalaya</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <button type="submit" class="btn btn-primary" value="Meghalaya" name="state">Schemes</button>
+              <a class="btn btn-primary" href="https://hospitals.pmjay.gov.in/Search/empnlWorkFlow.htm?actionFlag=ViewRegisteredHosptlsNew">Facilities</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="col-xs-3 col-sm-3 col-md-3">
+          <div class="card" style="width: 18rem;">
+            <img  src="{% static 'team/mizoram.png' %}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Mizoram</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <button type="submit" class="btn btn-primary" value="Mizoram" name="state">Schemes</button>
+              <a class="btn btn-primary" href="https://hospitals.pmjay.gov.in/Search/empnlWorkFlow.htm?actionFlag=ViewRegisteredHosptlsNew">Facilities</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-3 col-sm-3 col-md-3">
+          <div class="card" style="width: 18rem;">
+            <img src="{% static 'team/nagaland.png' %}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Nagaland</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <button type="submit" class="btn btn-primary" value="Nagaland" name="state">Schemes</button>
+              <a class="btn btn-primary" href="https://hospitals.pmjay.gov.in/Search/empnlWorkFlow.htm?actionFlag=ViewRegisteredHosptlsNew">Facilities</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-3 col-sm-3 col-md-3">
+          <div class="card" style="width: 18rem;">
+            <img  src="{% static 'team/odisha.png' %}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Odisha</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <button type="submit" class="btn btn-primary" value="Odisha" name="state">Schemes</button>
+              <a class="btn btn-primary" href="https://hospitals.pmjay.gov.in/Search/empnlWorkFlow.htm?actionFlag=ViewRegisteredHosptlsNew">Facilities</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-3 col-sm-3 col-md-3">
+          <div class="card" style="width: 18rem;">
+            <img  src="{% static 'team/puducherry.png' %}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Puducherry</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <button type="submit" class="btn btn-primary" value="Puducherry" name="state">Schemes</button>
+              <a class="btn btn-primary" href="https://hospitals.pmjay.gov.in/Search/empnlWorkFlow.htm?actionFlag=ViewRegisteredHosptlsNew">Facilities</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="col-xs-3 col-sm-3 col-md-3">
+          <div class="card" style="width: 18rem;">
+            <img  src="{% static 'team/punj.png' %}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Punjab</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <button type="submit" class="btn btn-primary" value="Punjab" name="state">Schemes</button>
+              <a class="btn btn-primary" href="https://hospitals.pmjay.gov.in/Search/empnlWorkFlow.htm?actionFlag=ViewRegisteredHosptlsNew">Facilities</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-3 col-sm-3 col-md-3">
+          <div class="card" style="width: 18rem;">
+            <img src="{% static 'team/rajasthan.png' %}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Rajasthan</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <button type="submit" class="btn btn-primary" value="Rajasthan" name="state">Schemes</button>
+              <a class="btn btn-primary" href="https://hospitals.pmjay.gov.in/Search/empnlWorkFlow.htm?actionFlag=ViewRegisteredHosptlsNew">Facilities</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-3 col-sm-3 col-md-3">
+          <div class="card" style="width: 18rem;">
+            <img  src="{% static 'team/sikkim.png' %}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Sikkim</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <button type="submit" class="btn btn-primary" value="Sikkim" name="state">Schemes</button>
+              <a class="btn btn-primary" href="https://hospitals.pmjay.gov.in/Search/empnlWorkFlow.htm?actionFlag=ViewRegisteredHosptlsNew">Facilities</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-3 col-sm-3 col-md-3">
+          <div class="card" style="width: 18rem;">
+            <img  src="{% static 'team/tamil.png' %}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Tamil Nadu</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <button type="submit" class="btn btn-primary" value="Tamil Nadu" name="state">Schemes</button>
+              <a class="btn btn-primary" href="https://hospitals.pmjay.gov.in/Search/empnlWorkFlow.htm?actionFlag=ViewRegisteredHosptlsNew">Facilities</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="col-xs-3 col-sm-3 col-md-3">
+          <div class="card" style="width: 18rem;">
+            <img  src="{% static 'team/tripura.png' %}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Tripura</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <button type="submit" class="btn btn-primary" value="Tripura" name="state">Schemes</button>
+              <a class="btn btn-primary" href="https://hospitals.pmjay.gov.in/Search/empnlWorkFlow.htm?actionFlag=ViewRegisteredHosptlsNew">Facilities</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-3 col-sm-3 col-md-3">
+          <div class="card" style="width: 18rem;">
+            <img src="{% static 'team/uttar.png' %}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Uttar Pradesh</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <button type="submit" class="btn btn-primary" value="Uttar Pradesh" name="state">Schemes</button>
+              <a class="btn btn-primary" href="https://hospitals.pmjay.gov.in/Search/empnlWorkFlow.htm?actionFlag=ViewRegisteredHosptlsNew">Facilities</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-3 col-sm-3 col-md-3">
+          <div class="card" style="width: 18rem;">
+            <img  src="{% static 'team/uttarakhand.png' %}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Uttrakhand</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <button type="submit" class="btn btn-primary" value="Uttrakhand" name="state">Schemes</button>
+              <a class="btn btn-primary" href="https://hospitals.pmjay.gov.in/Search/empnlWorkFlow.htm?actionFlag=ViewRegisteredHosptlsNew">Facilities</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-3 col-sm-3 col-md-3">
+          <div class="card" style="width: 18rem;">
+            <img src="{% static 'team/west.png' %}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">West Bengal</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <button type="submit" class="btn btn-primary" value="West Bengal" name="state">Schemes</button>
+              <a class="btn btn-primary" href="https://hospitals.pmjay.gov.in/Search/empnlWorkFlow.htm?actionFlag=ViewRegisteredHosptlsNew">Facilities</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+
+</div>
+    </form>
+
+    <!-- left and right controls for the slide -->
+    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#demo" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+    </a>
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+  </body>
+</html>

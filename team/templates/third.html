@@ -1,0 +1,1022 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+		*{
+			margin:0px;
+			padding: 0px;
+		}
+		body{
+			background-image: url("{% static 'team/img.jpeg' %}");
+			background-size: 1365px 700px;
+		}
+		#main{
+			margin-top: 280px;
+			margin-left: 400px;
+		}
+		.heading:hover{
+			box-shadow: 8px 8px 20px red;
+			border-radius: 5px;
+			padding: 5px;
+			width:510px;
+			l
+		}
+		a
+		{
+		 text-decoration:None;
+		 color:black;
+		}
+		a:hover{
+		  color:red;
+		}
+		#main:hover{
+		    box-shadow: 4px 4px 10px red;
+			border-radius: 5px;
+			color:red;
+			width:730px;
+		}
+		#heading{
+		font-size:100px;
+		color:rgb(12,233,200);
+		text-shadow:8px 8px 20px red;
+		}
+	</style>
+    <marquee><h1 id="heading">{{sname}} {{scheme}} Schemes</h1></marquee>
+</head>
+<body>
+    <div id="main">
+
+    </div>
+</body>
+<script type="text/javascript">
+    var st="{{sname}}";
+    var sch="{{scheme}}";
+    var a=document.getElementById("main");
+    switch(st)
+    {
+    case "Andhra Pradesh":
+        if(sch=="Burn")
+        {
+        a.innerHTML="<a href='https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3038407'><h1>National programme for prevention of burn injuries</h1></a>";
+        }
+        if(sch=="Cancer")
+        {
+        a.innerHTML="<a href='http://www.nihfw.org/NationalHealthProgramme/NATIONALCANCERCONTROLPROGRAMME.html'><h1>NATIONAL CANCER CONTROL PROGRAMME</h1></a>";
+        }
+        if(sch=="New Born")
+        {
+            a.innerHTML="<a href='https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4310710/'><h1>NEW BORN CARE SCHEME</h1></a>";
+        }
+        if(sch=="Kidney")
+        {
+            a.innerHTML="<a href='http://www.ambedkarfoundation.in/am/?id=1593818B2E47AE64&pg=10D0022F31DA6A07&nm=40870F6A2B6A2A3D80AB65D6A7B576F5'><h1>Dr. Ambedkar Medical Aid Scheme</h1></a>";
+        }
+        if(sch=="Deficiency")
+        {
+            a.innerHTML="<a href='https://www.nhp.gov.in/national-iodine-deficiency-disorders-control-progr_pg'><h1>National Iodine Deficiency Disorders Control</h1></a><br><a href='https://niti.gov.in/poshan-abhiyaan'><h1>POSHAN Abhiyaan</h1></a>";
+        }
+        if(sch=="Hiv/Aids")
+        {
+            a.innerHTML="<a href='http://naco.gov.in/nacp'><h1>National AIDS Control Programme</h1></a>";
+        }
+        if(sch=="Diabetes")
+        {
+            a.innerHTML="<a href='https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3395295/'><h1>National programme on prevention of Diabetes</h1></a>";
+        }
+        break;
+    case "Arunachal Pradesh":
+        if(sch=="Burn")
+        {
+        a.innerHTML="<a href='https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3038407'><h1>National programme for prevention of burn injuries</h1></a>";
+        }
+        if(sch=="Cancer")
+        {
+        a.innerHTML="<a href='http://www.nihfw.org/NationalHealthProgramme/NATIONALCANCERCONTROLPROGRAMME.html'><h1>NATIONAL CANCER CONTROL PROGRAMME</h1></a>";
+        }
+        if(sch=="New Born")
+        {
+        a.innerHTML="<a href='https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4310710/'><h1>NEW BORN CARE SCHEME</h1></a>";
+        }
+        if(sch=="Kidney")
+        {
+            a.innerHTML="<a href='http://www.ambedkarfoundation.in/am/?id=1593818B2E47AE64&pg=10D0022F31DA6A07&nm=40870F6A2B6A2A3D80AB65D6A7B576F5'><h1>Dr. Ambedkar Medical Aid Scheme</h1></a>";
+        }
+        if(sch=="Deficiency")
+        {
+            a.innerHTML="<a href='https://www.nhp.gov.in/national-iodine-deficiency-disorders-control-progr_pg'><h1>National Iodine Deficiency Disorders Control</h1></a><br><a href='https://niti.gov.in/poshan-abhiyaan'><h1>POSHAN Abhiyaan</h1></a>";
+        }
+        if(sch=="Hiv/Aids")
+        {
+            a.innerHTML="<a href='http://naco.gov.in/nacp'><h1>National AIDS Control Programme</h1></a>";
+        }
+        if(sch=="Diabetes")
+        {
+            a.innerHTML="<a href='https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3395295/'><h1>National programme on prevention of Diabetes</h1></a>";
+        }
+        break;
+    case "Assam":
+        if(sch=="Burn")
+        {
+        a.innerHTML="<a href='https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3038407'><h1>National programme for prevention of burn injuries</h1></a>";
+        }
+        if(sch=="Cancer")
+        {
+        a.innerHTML="<a href='http://www.nihfw.org/NationalHealthProgramme/NATIONALCANCERCONTROLPROGRAMME.html'><h1>NATIONAL CANCER CONTROL PROGRAMME</h1></a>";
+        }
+        if(sch=="New Born")
+        {
+        a.innerHTML="<a href='https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4310710/'><h1>NEW BORN CARE SCHEME</h1></a>";
+        }
+        if(sch=="Kidney")
+        {
+            a.innerHTML="<a href='http://www.ambedkarfoundation.in/am/?id=1593818B2E47AE64&pg=10D0022F31DA6A07&nm=40870F6A2B6A2A3D80AB65D6A7B576F5'><h1>Dr. Ambedkar Medical Aid Scheme</h1></a>";
+        }
+        if(sch=="Deficiency")
+        {
+            a.innerHTML="<a href='https://www.nhp.gov.in/national-iodine-deficiency-disorders-control-progr_pg'><h1>National Iodine Deficiency Disorders Control</h1></a><br><a href='https://niti.gov.in/poshan-abhiyaan'><h1>POSHAN Abhiyaan</h1></a>";
+        }
+        if(sch=="Hiv/Aids")
+        {
+            a.innerHTML="<a href='http://naco.gov.in/nacp'><h1>National AIDS Control Programme</h1></a>";
+        }
+        if(sch=="Diabetes")
+        {
+            a.innerHTML="<a href='https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3395295/'><h1>National programme on prevention of Diabetes</h1></a>";
+        }
+        break;
+    case "Bihar":
+        if(sch=="Burn")
+        {
+        a.innerHTML="<a href='https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3038407'><h1>National programme for prevention of burn injuries</h1></a><br><a href='http://bslsa.bih.nic.in/schemes.html'><h1>Bihar Victim Compensation Scheme</h1></a>";
+        }
+        if(sch=="Cancer")
+        {
+        a.innerHTML="<a href='http://www.nihfw.org/NationalHealthProgramme/NATIONALCANCERCONTROLPROGRAMME.html'><h1>NATIONAL CANCER CONTROL PROGRAMME</h1></a>";
+        }
+        if(sch=="New Born")
+        {
+        a.innerHTML="<a href='https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4310710/'><h1>NEW BORN CARE SCHEME</h1></a>";
+        }
+        if(sch=="Kidney")
+        {
+            a.innerHTML="<a href='http://www.ambedkarfoundation.in/am/?id=1593818B2E47AE64&pg=10D0022F31DA6A07&nm=40870F6A2B6A2A3D80AB65D6A7B576F5'><h1>Dr. Ambedkar Medical Aid Scheme</h1></a>";
+        }
+        if(sch=="Deficiency")
+        {
+            a.innerHTML="<a href='https://www.nhp.gov.in/national-iodine-deficiency-disorders-control-progr_pg'><h1>National Iodine Deficiency Disorders Control</h1></a><br><a href='https://niti.gov.in/poshan-abhiyaan'><h1>POSHAN Abhiyaan</h1></a>";
+        }
+        if(sch=="Hiv/Aids")
+        {
+            a.innerHTML="<a href='http://naco.gov.in/nacp'><h1>National AIDS Control Programme</h1></a>";
+        }
+        if(sch=="Diabetes")
+        {
+            a.innerHTML="<a href='https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3395295/'><h1>National programme on prevention of Diabetes</h1></a>";
+        }
+        break;
+    case "Chandigarh":
+        if(sch=="Burn")
+        {
+        a.innerHTML="<a href='https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3038407'><h1>National programme for prevention of burn injuries</h1></a>";
+        }
+        if(sch=="Cancer")
+        {
+        a.innerHTML="<a href='http://www.nihfw.org/NationalHealthProgramme/NATIONALCANCERCONTROLPROGRAMME.html'><h1>NATIONAL CANCER CONTROL PROGRAMME</h1></a>";
+        }
+        if(sch=="New Born")
+        {
+        a.innerHTML="<a href='https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4310710/'><h1>NEW BORN CARE SCHEME</h1></a>";
+        }
+        if(sch=="Kidney")
+        {
+            a.innerHTML="<a href='http://www.ambedkarfoundation.in/am/?id=1593818B2E47AE64&pg=10D0022F31DA6A07&nm=40870F6A2B6A2A3D80AB65D6A7B576F5'><h1>Dr. Ambedkar Medical Aid Scheme</h1></a>";
+        }
+        if(sch=="Deficiency")
+        {
+            a.innerHTML="<a href='https://www.nhp.gov.in/national-iodine-deficiency-disorders-control-progr_pg'><h1>National Iodine Deficiency Disorders Control</h1></a><br><a href='https://niti.gov.in/poshan-abhiyaan'><h1>POSHAN Abhiyaan</h1></a>";
+        }
+        if(sch=="Hiv/Aids")
+        {
+            a.innerHTML="<a href='http://naco.gov.in/nacp'><h1>National AIDS Control Programme</h1></a>";
+        }
+        if(sch=="Diabetes")
+        {
+            a.innerHTML="<a href='https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3395295/'><h1>National programme on prevention of Diabetes</h1></a>";
+        }
+        break;
+    case "Chattisgarh":
+        if(sch=="Burn")
+        {
+        a.innerHTML="<a href='https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3038407'><h1>National programme for prevention of burn injuries</h1></a>";
+        }
+        if(sch=="Cancer")
+        {
+        a.innerHTML="<a href='http://www.nihfw.org/NationalHealthProgramme/NATIONALCANCERCONTROLPROGRAMME.html'><h1>NATIONAL CANCER CONTROL PROGRAMME</h1></a>";
+        }
+        if(sch=="New Born")
+        {
+        a.innerHTML="<a href='https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4310710/'><h1>NEW BORN CARE SCHEME</h1></a>";
+        }
+        if(sch=="Kidney")
+        {
+            a.innerHTML="<a href='http://www.ambedkarfoundation.in/am/?id=1593818B2E47AE64&pg=10D0022F31DA6A07&nm=40870F6A2B6A2A3D80AB65D6A7B576F5'><h1>Dr. Ambedkar Medical Aid Scheme</h1></a>";
+        }
+        if(sch=="Deficiency")
+        {
+            a.innerHTML="<a href='https://www.nhp.gov.in/national-iodine-deficiency-disorders-control-progr_pg'><h1>National Iodine Deficiency Disorders Control</h1></a><br><a href='https://niti.gov.in/poshan-abhiyaan'><h1>POSHAN Abhiyaan</h1></a>";
+        }
+        if(sch=="Hiv/Aids")
+        {
+            a.innerHTML="<a href='http://naco.gov.in/nacp'><h1>National AIDS Control Programme</h1></a>";
+        }
+        if(sch=="Diabetes")
+        {
+            a.innerHTML="<a href='https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3395295/'><h1>National programme on prevention of Diabetes</h1></a>";
+        }
+        break;
+    case "Delhi":
+        if(sch=="Burn")
+        {
+        a.innerHTML="<a href='https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3038407'><h1>National programme for prevention of burn injuries</h1></a>";
+        }
+        if(sch=="Cancer")
+        {
+        a.innerHTML="<a href='http://www.nihfw.org/NationalHealthProgramme/NATIONALCANCERCONTROLPROGRAMME.html'><h1>NATIONAL CANCER CONTROL PROGRAMME</h1></a>";
+        }
+        if(sch=="New Born")
+        {
+        a.innerHTML="<a href='https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4310710/'><h1>NEW BORN CARE SCHEME</h1></a>";
+        }
+        if(sch=="Kidney")
+        {
+            a.innerHTML="<a href='http://www.ambedkarfoundation.in/am/?id=1593818B2E47AE64&pg=10D0022F31DA6A07&nm=40870F6A2B6A2A3D80AB65D6A7B576F5'><h1>Dr. Ambedkar Medical Aid Scheme</h1></a>";
+        }
+        if(sch=="Deficiency")
+        {
+            a.innerHTML="<a href='https://www.nhp.gov.in/national-iodine-deficiency-disorders-control-progr_pg'><h1>National Iodine Deficiency Disorders Control</h1></a><br><a href='https://niti.gov.in/poshan-abhiyaan'><h1>POSHAN Abhiyaan</h1></a>";
+        }
+        if(sch=="Hiv/Aids")
+        {
+            a.innerHTML="<a href='http://naco.gov.in/nacp'><h1>National AIDS Control Programme</h1></a>";
+        }
+        if(sch=="Diabetes")
+        {
+            a.innerHTML="<a href='https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3395295/'><h1>National programme on prevention of Diabetes</h1></a>";
+        }
+        break;
+    case "Goa":
+        if(sch=="Burn")
+        {
+        a.innerHTML="<a href='https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3038407'><h1>National programme for prevention of burn injuries</h1></a>";
+        }
+        if(sch=="Cancer")
+        {
+        a.innerHTML="<a href='http://www.nihfw.org/NationalHealthProgramme/NATIONALCANCERCONTROLPROGRAMME.html'><h1>NATIONAL CANCER CONTROL PROGRAMME</h1></a>";
+        }
+        if(sch=="New Born")
+        {
+        a.innerHTML="<a href='https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4310710/'><h1>NEW BORN CARE SCHEME</h1></a>";
+        }
+        if(sch=="Kidney")
+        {
+            a.innerHTML="<a href='http://www.ambedkarfoundation.in/am/?id=1593818B2E47AE64&pg=10D0022F31DA6A07&nm=40870F6A2B6A2A3D80AB65D6A7B576F5'><h1>Dr. Ambedkar Medical Aid Scheme</h1></a>";
+        }
+        if(sch=="Deficiency")
+        {
+            a.innerHTML="<a href='https://www.nhp.gov.in/national-iodine-deficiency-disorders-control-progr_pg'><h1>National Iodine Deficiency Disorders Control</h1></a><br><a href='https://niti.gov.in/poshan-abhiyaan'><h1>POSHAN Abhiyaan</h1></a>";
+        }
+        if(sch=="Hiv/Aids")
+        {
+            a.innerHTML="<a href='http://naco.gov.in/nacp'><h1>National AIDS Control Programme</h1></a>";
+        }
+        if(sch=="Diabetes")
+        {
+            a.innerHTML="<a href='https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3395295/'><h1>National programme on prevention of Diabetes</h1></a>";
+        }
+        break;
+    case "Gujrat":
+        if(sch=="Burn")
+        {
+        a.innerHTML="<a href='https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3038407'><h1>National programme for prevention of burn injuries</h1></a>";
+        }
+        if(sch=="Cancer")
+        {
+        a.innerHTML="<a href='http://www.nihfw.org/NationalHealthProgramme/NATIONALCANCERCONTROLPROGRAMME.html'><h1>NATIONAL CANCER CONTROL PROGRAMME</h1></a>";
+        }
+        if(sch=="New Born")
+        {
+        a.innerHTML="<a href='https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4310710/'><h1>NEW BORN CARE SCHEME</h1></a>";
+        }
+        if(sch=="Kidney")
+        {
+            a.innerHTML="<a href='http://www.ambedkarfoundation.in/am/?id=1593818B2E47AE64&pg=10D0022F31DA6A07&nm=40870F6A2B6A2A3D80AB65D6A7B576F5'><h1>Dr. Ambedkar Medical Aid Scheme</h1></a>";
+        }
+        if(sch=="Deficiency")
+        {
+            a.innerHTML="<a href='https://www.nhp.gov.in/national-iodine-deficiency-disorders-control-progr_pg'><h1>National Iodine Deficiency Disorders Control</h1></a><br><a href='https://niti.gov.in/poshan-abhiyaan'><h1>POSHAN Abhiyaan</h1></a>";
+        }
+        if(sch=="Hiv/Aids")
+        {
+            a.innerHTML="<a href='http://naco.gov.in/nacp'><h1>National AIDS Control Programme</h1></a>";
+        }
+        if(sch=="Diabetes")
+        {
+            a.innerHTML="<a href='https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3395295/'><h1>National programme on prevention of Diabetes</h1></a>";
+        }
+        break;
+    case "Haryana":
+        if(sch=="Burn")
+        {
+        a.innerHTML="<a href='https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3038407'><h1>National programme for prevention of burn injuries</h1></a>";
+        }
+        if(sch=="Cancer")
+        {
+        a.innerHTML="<a href='http://www.nihfw.org/NationalHealthProgramme/NATIONALCANCERCONTROLPROGRAMME.html'><h1>NATIONAL CANCER CONTROL PROGRAMME</h1></a>";
+        }
+        if(sch=="New Born")
+        {
+        a.innerHTML="<a href='https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4310710/'><h1>NEW BORN CARE SCHEME</h1></a>";
+        }
+        if(sch=="Kidney")
+        {
+            a.innerHTML="<a href='http://www.haryanascbc.gov.in/application-form-for-medical-aid-under-dr-ambedkar-medical-aid-scheme'><h1>Haryana Dr. Ambedkar Medical Aid Scheme</h1></a>";
+        }
+        if(sch=="Deficiency")
+        {
+            a.innerHTML="<a href='https://www.nhp.gov.in/national-iodine-deficiency-disorders-control-progr_pg'><h1>National Iodine Deficiency Disorders Control</h1></a><br><a href='https://niti.gov.in/poshan-abhiyaan'><h1>POSHAN Abhiyaan</h1></a>";
+        }
+        if(sch=="Hiv/Aids")
+        {
+            a.innerHTML="<a href='http://naco.gov.in/nacp'><h1>National AIDS Control Programme</h1></a>";
+        }
+        if(sch=="Diabetes")
+        {
+            a.innerHTML="<a href='https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3395295/'><h1>National programme on prevention of Diabetes</h1></a>";
+        }
+        break;
+    case "Himachal Pradesh":
+        if(sch=="Burn")
+        {
+        a.innerHTML="<a href='https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3038407'><h1>National programme for prevention of burn injuries</h1></a>";
+        }
+        if(sch=="Cancer")
+        {
+        a.innerHTML="<a href='http://www.nihfw.org/NationalHealthProgramme/NATIONALCANCERCONTROLPROGRAMME.html'><h1>NATIONAL CANCER CONTROL PROGRAMME</h1></a>";
+        }
+        if(sch=="New Born")
+        {
+        a.innerHTML="<a href='https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4310710/'><h1>NEW BORN CARE SCHEME</h1></a>";
+        }
+        if(sch=="Kidney")
+        {
+            a.innerHTML="<a href='http://www.ambedkarfoundation.in/am/?id=1593818B2E47AE64&pg=10D0022F31DA6A07&nm=40870F6A2B6A2A3D80AB65D6A7B576F5'><h1>Dr. Ambedkar Medical Aid Scheme</h1></a>";
+        }
+        if(sch=="Deficiency")
+        {
+            a.innerHTML="<a href='https://www.nhp.gov.in/national-iodine-deficiency-disorders-control-progr_pg'><h1>National Iodine Deficiency Disorders Control</h1></a><br><a href='https://niti.gov.in/poshan-abhiyaan'><h1>POSHAN Abhiyaan</h1></a>";
+        }
+        if(sch=="Hiv/Aids")
+        {
+            a.innerHTML="<a href='http://naco.gov.in/nacp'><h1>National AIDS Control Programme</h1></a>";
+        }
+        if(sch=="Diabetes")
+        {
+            a.innerHTML="<a href='https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3395295/'><h1>National programme on prevention of Diabetes</h1></a>";
+        }
+        break;
+    case "Jammu Kashmir":
+        if(sch=="Burn")
+        {
+        a.innerHTML="<a href='https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3038407'><h1>National programme for prevention of burn injuries</h1></a>";
+        }
+        if(sch=="Cancer")
+        {
+        a.innerHTML="<a href='http://www.nihfw.org/NationalHealthProgramme/NATIONALCANCERCONTROLPROGRAMME.html'><h1>NATIONAL CANCER CONTROL PROGRAMME</h1></a>";
+        }
+        if(sch=="New Born")
+        {
+        a.innerHTML="<a href='https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4310710/'><h1>NEW BORN CARE SCHEME</h1></a>";
+        }
+        if(sch=="Kidney")
+        {
+            a.innerHTML="<a href='http://www.ambedkarfoundation.in/am/?id=1593818B2E47AE64&pg=10D0022F31DA6A07&nm=40870F6A2B6A2A3D80AB65D6A7B576F5'><h1>Dr. Ambedkar Medical Aid Scheme</h1></a>";
+        }
+        if(sch=="Deficiency")
+        {
+            a.innerHTML="<a href='https://www.nhp.gov.in/national-iodine-deficiency-disorders-control-progr_pg'><h1>National Iodine Deficiency Disorders Control</h1></a><br><a href='https://niti.gov.in/poshan-abhiyaan'><h1>POSHAN Abhiyaan</h1></a>";
+        }
+        if(sch=="Hiv/Aids")
+        {
+            a.innerHTML="<a href='http://naco.gov.in/nacp'><h1>National AIDS Control Programme</h1></a>";
+        }
+        if(sch=="Diabetes")
+        {
+            a.innerHTML="<a href='https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3395295/'><h1>National programme on prevention of Diabetes</h1></a>";
+        }
+        break;
+    case "Jharkhand":
+        if(sch=="Burn")
+        {
+        a.innerHTML="<a href='https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3038407'><h1>National programme for prevention of burn injuries</h1></a>";
+        }
+        if(sch=="Cancer")
+        {
+        a.innerHTML="<a href='http://www.nihfw.org/NationalHealthProgramme/NATIONALCANCERCONTROLPROGRAMME.html'><h1>NATIONAL CANCER CONTROL PROGRAMME</h1></a>";
+        }
+        if(sch=="New Born")
+        {
+        a.innerHTML="<a href='https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4310710/'><h1>NEW BORN CARE SCHEME</h1></a>";
+        }
+        if(sch=="Kidney")
+        {
+            a.innerHTML="<a href='http://www.ambedkarfoundation.in/am/?id=1593818B2E47AE64&pg=10D0022F31DA6A07&nm=40870F6A2B6A2A3D80AB65D6A7B576F5'><h1>Dr. Ambedkar Medical Aid Scheme</h1></a>";
+        }
+        if(sch=="Deficiency")
+        {
+            a.innerHTML="<a href='https://www.nhp.gov.in/national-iodine-deficiency-disorders-control-progr_pg'><h1>National Iodine Deficiency Disorders Control</h1></a><br><a href='https://niti.gov.in/poshan-abhiyaan'><h1>POSHAN Abhiyaan</h1></a>";
+        }
+        if(sch=="Hiv/Aids")
+        {
+            a.innerHTML="<a href='http://naco.gov.in/nacp'><h1>National AIDS Control Programme</h1></a>";
+        }
+        if(sch=="Diabetes")
+        {
+            a.innerHTML="<a href='https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3395295/'><h1>National programme on prevention of Diabetes</h1></a>";
+        }
+        break;
+    case "Karnataka":
+        if(sch=="Burn")
+        {
+        a.innerHTML="<a href='https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3038407'><h1>National programme for prevention of burn injuries</h1></a>";
+        }
+        if(sch=="Cancer")
+        {
+        a.innerHTML="<a href='http://www.nihfw.org/NationalHealthProgramme/NATIONALCANCERCONTROLPROGRAMME.html'><h1>NATIONAL CANCER CONTROL PROGRAMME</h1></a>";
+        }
+        if(sch=="New Born")
+        {
+        a.innerHTML="<a href='https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4310710/'><h1>NEW BORN CARE SCHEME</h1></a>";
+        }
+        if(sch=="Kidney")
+        {
+            a.innerHTML="<a href='http://www.ambedkarfoundation.in/am/?id=1593818B2E47AE64&pg=10D0022F31DA6A07&nm=40870F6A2B6A2A3D80AB65D6A7B576F5'><h1>Dr. Ambedkar Medical Aid Scheme</h1></a>";
+        }
+        if(sch=="Deficiency")
+        {
+            a.innerHTML="<a href='https://www.nhp.gov.in/national-iodine-deficiency-disorders-control-progr_pg'><h1>National Iodine Deficiency Disorders Control</h1></a><br><a href='https://niti.gov.in/poshan-abhiyaan'><h1>POSHAN Abhiyaan</h1></a>";
+        }
+        if(sch=="Hiv/Aids")
+        {
+            a.innerHTML="<a href='http://naco.gov.in/nacp'><h1>National AIDS Control Programme</h1></a>";
+        }
+        if(sch=="Diabetes")
+        {
+            a.innerHTML="<a href='https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3395295/'><h1>National programme on prevention of Diabetes</h1></a>";
+        }
+        break;
+    case "Kerala":
+        if(sch=="Burn")
+        {
+        a.innerHTML="<a href='https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3038407'><h1>National programme for prevention of burn injuries</h1></a>";
+        }
+        if(sch=="Cancer")
+        {
+        a.innerHTML="<a href='http://www.nihfw.org/NationalHealthProgramme/NATIONALCANCERCONTROLPROGRAMME.html'><h1>NATIONAL CANCER CONTROL PROGRAMME</h1></a>";
+        }
+        if(sch=="New Born")
+        {
+        a.innerHTML="<a href='https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4310710/'><h1>NEW BORN CARE SCHEME</h1></a>";
+        }
+        if(sch=="Kidney")
+        {
+            a.innerHTML="<a href='http://www.ambedkarfoundation.in/am/?id=1593818B2E47AE64&pg=10D0022F31DA6A07&nm=40870F6A2B6A2A3D80AB65D6A7B576F5'><h1>Dr. Ambedkar Medical Aid Scheme</h1></a>";
+        }
+        if(sch=="Deficiency")
+        {
+            a.innerHTML="<a href='https://www.nhp.gov.in/national-iodine-deficiency-disorders-control-progr_pg'><h1>National Iodine Deficiency Disorders Control</h1></a><br><a href='https://niti.gov.in/poshan-abhiyaan'><h1>POSHAN Abhiyaan</h1></a>";
+        }
+        if(sch=="Hiv/Aids")
+        {
+            a.innerHTML="<a href='http://naco.gov.in/nacp'><h1>National AIDS Control Programme</h1></a>";
+        }
+        if(sch=="Diabetes")
+        {
+            a.innerHTML="<a href='https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3395295/'><h1>National programme on prevention of Diabetes</h1></a>";
+        }
+        break;
+    case "Lakshdweep":
+        if(sch=="Burn")
+        {
+        a.innerHTML="<a href='https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3038407'><h1>National programme for prevention of burn injuries</h1></a>";
+        }
+        if(sch=="Cancer")
+        {
+        a.innerHTML="<a href='http://www.nihfw.org/NationalHealthProgramme/NATIONALCANCERCONTROLPROGRAMME.html'><h1>NATIONAL CANCER CONTROL PROGRAMME</h1></a>";
+        }
+        if(sch=="New Born")
+        {
+        a.innerHTML="<a href='https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4310710/'><h1>NEW BORN CARE SCHEME</h1></a>";
+        }
+        if(sch=="Kidney")
+        {
+            a.innerHTML="<a href='http://www.ambedkarfoundation.in/am/?id=1593818B2E47AE64&pg=10D0022F31DA6A07&nm=40870F6A2B6A2A3D80AB65D6A7B576F5'><h1>Dr. Ambedkar Medical Aid Scheme</h1></a>";
+        }
+        if(sch=="Deficiency")
+        {
+            a.innerHTML="<a href='https://www.nhp.gov.in/national-iodine-deficiency-disorders-control-progr_pg'><h1>National Iodine Deficiency Disorders Control</h1></a><br><a href='https://niti.gov.in/poshan-abhiyaan'><h1>POSHAN Abhiyaan</h1></a>";
+        }
+        if(sch=="Hiv/Aids")
+        {
+            a.innerHTML="<a href='http://naco.gov.in/nacp'><h1>National AIDS Control Programme</h1></a>";
+        }
+        if(sch=="Diabetes")
+        {
+            a.innerHTML="<a href='https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3395295/'><h1>National programme on prevention of Diabetes</h1></a>";
+        }
+        break;
+    case "Madhya Pradesh":
+        if(sch=="Burn")
+        {
+        a.innerHTML="<a href='https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3038407'><h1>National programme for prevention of burn injuries</h1></a>";
+        }
+        if(sch=="Cancer")
+        {
+        a.innerHTML="<a href='http://www.nihfw.org/NationalHealthProgramme/NATIONALCANCERCONTROLPROGRAMME.html'><h1>NATIONAL CANCER CONTROL PROGRAMME</h1></a>";
+        }
+        if(sch=="New Born")
+        {
+        a.innerHTML="<a href='https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4310710/'><h1>NEW BORN CARE SCHEME</h1></a>";
+        }
+        if(sch=="Kidney")
+        {
+            a.innerHTML="<a href='http://www.ambedkarfoundation.in/am/?id=1593818B2E47AE64&pg=10D0022F31DA6A07&nm=40870F6A2B6A2A3D80AB65D6A7B576F5'><h1>Dr. Ambedkar Medical Aid Scheme</h1></a>";
+        }
+        if(sch=="Deficiency")
+        {
+            a.innerHTML="<a href='https://www.nhp.gov.in/national-iodine-deficiency-disorders-control-progr_pg'><h1>National Iodine Deficiency Disorders Control</h1></a><br><a href='https://niti.gov.in/poshan-abhiyaan'><h1>POSHAN Abhiyaan</h1></a>";
+        }
+        if(sch=="Hiv/Aids")
+        {
+            a.innerHTML="<a href='http://naco.gov.in/nacp'><h1>National AIDS Control Programme</h1></a>";
+        }
+        if(sch=="Diabetes")
+        {
+            a.innerHTML="<a href='https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3395295/'><h1>National programme on prevention of Diabetes</h1></a>";
+        }
+        break;
+    case "Maharashtra":
+        if(sch=="Burn")
+        {
+        a.innerHTML="<a href='https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3038407'><h1>National programme for prevention of burn injuries</h1></a>";
+        }
+        if(sch=="Cancer")
+        {
+        a.innerHTML="<a href='http://www.nihfw.org/NationalHealthProgramme/NATIONALCANCERCONTROLPROGRAMME.html'><h1>NATIONAL CANCER CONTROL PROGRAMME</h1></a>";
+        }
+        if(sch=="New Born")
+        {
+        a.innerHTML="<a href='https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4310710/'><h1>NEW BORN CARE SCHEME</h1></a>";
+        }
+        if(sch=="Kidney")
+        {
+            a.innerHTML="<a href='http://www.ambedkarfoundation.in/am/?id=1593818B2E47AE64&pg=10D0022F31DA6A07&nm=40870F6A2B6A2A3D80AB65D6A7B576F5'><h1>Dr. Ambedkar Medical Aid Scheme</h1></a>";
+        }
+        if(sch=="Deficiency")
+        {
+            a.innerHTML="<a href='https://www.nhp.gov.in/national-iodine-deficiency-disorders-control-progr_pg'><h1>National Iodine Deficiency Disorders Control</h1></a><br><a href='https://niti.gov.in/poshan-abhiyaan'><h1>POSHAN Abhiyaan</h1></a>";
+        }
+        if(sch=="Hiv/Aids")
+        {
+            a.innerHTML="<a href='http://naco.gov.in/nacp'><h1>National AIDS Control Programme</h1></a>";
+        }
+        if(sch=="Diabetes")
+        {
+            a.innerHTML="<a href='https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3395295/'><h1>National programme on prevention of Diabetes</h1></a>";
+        }
+        break;
+    case "Manipur":
+        if(sch=="Burn")
+        {
+        a.innerHTML="<a href='https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3038407'><h1>National programme for prevention of burn injuries</h1></a><br><a href='https://www.gibl.in/government-scheme/atal-amrit-abhiyan.html'><h1>Atal Amrit Abhiyan Scheme</h1></a><br><a href='https://thoubal.nic.in/scheme/cm-gi-hakshelgi-tengbang/'><h1>CM-gi Hakshelgi Tengbang</h1></a>";
+        }
+        if(sch=="Cancer")
+        {
+        a.innerHTML="<a href='http://www.nihfw.org/NationalHealthProgramme/NATIONALCANCERCONTROLPROGRAMME.html'><h1>NATIONAL CANCER CONTROL PROGRAMME</h1></a>";
+        }
+        if(sch=="New Born")
+        {
+        a.innerHTML="<a href='https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4310710/'><h1>NEW BORN CARE SCHEME</h1></a>";
+        }
+        if(sch=="Kidney")
+        {
+            a.innerHTML="<a href='http://www.ambedkarfoundation.in/am/?id=1593818B2E47AE64&pg=10D0022F31DA6A07&nm=40870F6A2B6A2A3D80AB65D6A7B576F5'><h1>Dr. Ambedkar Medical Aid Scheme</h1></a>";
+        }
+        if(sch=="Deficiency")
+        {
+            a.innerHTML="<a href='https://www.nhp.gov.in/national-iodine-deficiency-disorders-control-progr_pg'><h1>National Iodine Deficiency Disorders Control</h1></a><br><a href='https://niti.gov.in/poshan-abhiyaan'><h1>POSHAN Abhiyaan</h1></a>";
+        }
+        if(sch=="Hiv/Aids")
+        {
+            a.innerHTML="<a href='http://naco.gov.in/nacp'><h1>National AIDS Control Programme</h1></a>";
+        }
+        if(sch=="Diabetes")
+        {
+            a.innerHTML="<a href='https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3395295/'><h1>National programme on prevention of Diabetes</h1></a>";
+        }
+        break;
+    case "Meghalaya":
+        if(sch=="Burn")
+        {
+        a.innerHTML="<a href='https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3038407'><h1>National programme for prevention of burn injuries</h1></a>";
+        }
+        if(sch=="Cancer")
+        {
+        a.innerHTML="<a href='http://www.nihfw.org/NationalHealthProgramme/NATIONALCANCERCONTROLPROGRAMME.html'><h1>NATIONAL CANCER CONTROL PROGRAMME</h1></a>";
+        }
+        if(sch=="New Born")
+        {
+        a.innerHTML="<a href='https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4310710/'><h1>NEW BORN CARE SCHEME</h1></a>";
+        }
+        if(sch=="Kidney")
+        {
+            a.innerHTML="<a href='http://www.ambedkarfoundation.in/am/?id=1593818B2E47AE64&pg=10D0022F31DA6A07&nm=40870F6A2B6A2A3D80AB65D6A7B576F5'><h1>Dr. Ambedkar Medical Aid Scheme</h1></a>";
+        }
+        if(sch=="Deficiency")
+        {
+            a.innerHTML="<a href='https://www.nhp.gov.in/national-iodine-deficiency-disorders-control-progr_pg'><h1>National Iodine Deficiency Disorders Control</h1></a><br><a href='https://niti.gov.in/poshan-abhiyaan'><h1>POSHAN Abhiyaan</h1></a>";
+        }
+        if(sch=="Hiv/Aids")
+        {
+            a.innerHTML="<a href='http://naco.gov.in/nacp'><h1>National AIDS Control Programme</h1></a>";
+        }
+        if(sch=="Diabetes")
+        {
+            a.innerHTML="<a href='https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3395295/'><h1>National programme on prevention of Diabetes</h1></a>";
+        }
+        break;
+    case "Mizoram":
+        if(sch=="Burn")
+        {
+        a.innerHTML="<a href='https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3038407'><h1>National programme for prevention of burn injuries</h1></a>";
+        }
+        if(sch=="Cancer")
+        {
+        a.innerHTML="<a href='http://www.nihfw.org/NationalHealthProgramme/NATIONALCANCERCONTROLPROGRAMME.html'><h1>NATIONAL CANCER CONTROL PROGRAMME</h1></a>";
+        }
+        if(sch=="New Born")
+        {
+        a.innerHTML="<a href='https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4310710/'><h1>NEW BORN CARE SCHEME</h1></a>";
+        }
+        if(sch=="Kidney")
+        {
+            a.innerHTML="<a href='http://www.ambedkarfoundation.in/am/?id=1593818B2E47AE64&pg=10D0022F31DA6A07&nm=40870F6A2B6A2A3D80AB65D6A7B576F5'><h1>Dr. Ambedkar Medical Aid Scheme</h1></a>";
+        }
+        if(sch=="Deficiency")
+        {
+            a.innerHTML="<a href='https://www.nhp.gov.in/national-iodine-deficiency-disorders-control-progr_pg'><h1>National Iodine Deficiency Disorders Control</h1></a><br><a href='https://niti.gov.in/poshan-abhiyaan'><h1>POSHAN Abhiyaan</h1></a>";
+        }
+        if(sch=="Hiv/Aids")
+        {
+            a.innerHTML="<a href='http://naco.gov.in/nacp'><h1>National AIDS Control Programme</h1></a>";
+        }
+        if(sch=="Diabetes")
+        {
+            a.innerHTML="<a href='https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3395295/'><h1>National programme on prevention of Diabetes</h1></a>";
+        }
+        break;
+    case "Nagaland":
+        if(sch=="Burn")
+        {
+        a.innerHTML="<a href='https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3038407'><h1>National programme for prevention of burn injuries</h1></a>";
+        }
+        if(sch=="Cancer")
+        {
+        a.innerHTML="<a href='http://www.nihfw.org/NationalHealthProgramme/NATIONALCANCERCONTROLPROGRAMME.html'><h1>NATIONAL CANCER CONTROL PROGRAMME</h1></a>";
+        }
+        if(sch=="New Born")
+        {
+        a.innerHTML="<a href='https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4310710/'><h1>NEW BORN CARE SCHEME</h1></a>";
+        }
+        if(sch=="Kidney")
+        {
+            a.innerHTML="<a href='http://www.ambedkarfoundation.in/am/?id=1593818B2E47AE64&pg=10D0022F31DA6A07&nm=40870F6A2B6A2A3D80AB65D6A7B576F5'><h1>Dr. Ambedkar Medical Aid Scheme</h1></a>";
+        }
+        if(sch=="Deficiency")
+        {
+            a.innerHTML="<a href='https://www.nhp.gov.in/national-iodine-deficiency-disorders-control-progr_pg'><h1>National Iodine Deficiency Disorders Control</h1></a><br><a href='https://niti.gov.in/poshan-abhiyaan'><h1>POSHAN Abhiyaan</h1></a>";
+        }
+        if(sch=="Hiv/Aids")
+        {
+            a.innerHTML="<a href='http://naco.gov.in/nacp'><h1>National AIDS Control Programme</h1></a>";
+        }
+        if(sch=="Diabetes")
+        {
+            a.innerHTML="<a href='https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3395295/'><h1>National programme on prevention of Diabetes</h1></a>";
+        }
+        break;
+    case "Odisha":
+        if(sch=="Burn")
+        {
+        a.innerHTML="<a href='https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3038407'><h1>National programme for prevention of burn injuries</h1></a>";
+        }
+        if(sch=="Cancer")
+        {
+        a.innerHTML="<a href='http://www.nihfw.org/NationalHealthProgramme/NATIONALCANCERCONTROLPROGRAMME.html'><h1>NATIONAL CANCER CONTROL PROGRAMME</h1></a>";
+        }
+        if(sch=="New Born")
+        {
+        a.innerHTML="<a href='https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4310710/'><h1>NEW BORN CARE SCHEME</h1></a>";
+        }
+        if(sch=="Kidney")
+        {
+            a.innerHTML="<a href='http://www.ambedkarfoundation.in/am/?id=1593818B2E47AE64&pg=10D0022F31DA6A07&nm=40870F6A2B6A2A3D80AB65D6A7B576F5'><h1>Dr. Ambedkar Medical Aid Scheme</h1></a>";
+        }
+        if(sch=="Deficiency")
+        {
+            a.innerHTML="<a href='https://www.nhp.gov.in/national-iodine-deficiency-disorders-control-progr_pg'><h1>National Iodine Deficiency Disorders Control</h1></a><br><a href='https://niti.gov.in/poshan-abhiyaan'><h1>POSHAN Abhiyaan</h1></a>";
+        }
+        if(sch=="Hiv/Aids")
+        {
+            a.innerHTML="<a href='http://naco.gov.in/nacp'><h1>National AIDS Control Programme</h1></a>";
+        }
+        if(sch=="Diabetes")
+        {
+            a.innerHTML="<a href='https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3395295/'><h1>National programme on prevention of Diabetes</h1></a>";
+        }
+        break;
+    case "Puducherry":
+        if(sch=="Burn")
+        {
+        a.innerHTML="<a href='https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3038407'><h1>National programme for prevention of burn injuries</h1></a>";
+        }
+        if(sch=="Cancer")
+        {
+        a.innerHTML="<a href='http://www.nihfw.org/NationalHealthProgramme/NATIONALCANCERCONTROLPROGRAMME.html'><h1>NATIONAL CANCER CONTROL PROGRAMME</h1></a>";
+        }
+        if(sch=="New Born")
+        {
+        a.innerHTML="<a href='https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4310710/'><h1>NEW BORN CARE SCHEME</h1></a>";
+        }
+        if(sch=="Kidney")
+        {
+            a.innerHTML="<a href='http://www.ambedkarfoundation.in/am/?id=1593818B2E47AE64&pg=10D0022F31DA6A07&nm=40870F6A2B6A2A3D80AB65D6A7B576F5'><h1>Dr. Ambedkar Medical Aid Scheme</h1></a>";
+        }
+        if(sch=="Deficiency")
+        {
+            a.innerHTML="<a href='https://www.nhp.gov.in/national-iodine-deficiency-disorders-control-progr_pg'><h1>National Iodine Deficiency Disorders Control</h1></a><br><a href='https://niti.gov.in/poshan-abhiyaan'><h1>POSHAN Abhiyaan</h1></a>";
+        }
+        if(sch=="Hiv/Aids")
+        {
+            a.innerHTML="<a href='http://naco.gov.in/nacp'><h1>National AIDS Control Programme</h1></a>";
+        }
+        if(sch=="Diabetes")
+        {
+            a.innerHTML="<a href='https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3395295/'><h1>National programme on prevention of Diabetes</h1></a>";
+        }
+        break;
+    case "Punjab":
+        if(sch=="Burn")
+        {
+        a.innerHTML="<a href='https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3038407'><h1>National programme for prevention of burn injuries</h1></a>";
+        }
+        if(sch=="Cancer")
+        {
+        a.innerHTML="<a href='http://www.nihfw.org/NationalHealthProgramme/NATIONALCANCERCONTROLPROGRAMME.html'><h1>NATIONAL CANCER CONTROL PROGRAMME</h1></a>";
+        }
+        if(sch=="New Born")
+        {
+        a.innerHTML="<a href='https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4310710/'><h1>NEW BORN CARE SCHEME</h1></a>";
+        }
+        if(sch=="Kidney")
+        {
+            a.innerHTML="<a href='http://www.ambedkarfoundation.in/am/?id=1593818B2E47AE64&pg=10D0022F31DA6A07&nm=40870F6A2B6A2A3D80AB65D6A7B576F5'><h1>Dr. Ambedkar Medical Aid Scheme</h1></a>";
+        }
+        if(sch=="Deficiency")
+        {
+            a.innerHTML="<a href='https://www.nhp.gov.in/national-iodine-deficiency-disorders-control-progr_pg'><h1>National Iodine Deficiency Disorders Control</h1></a><br><a href='https://niti.gov.in/poshan-abhiyaan'><h1>POSHAN Abhiyaan</h1></a>";
+        }
+        if(sch=="Hiv/Aids")
+        {
+            a.innerHTML="<a href='http://naco.gov.in/nacp'><h1>National AIDS Control Programme</h1></a>";
+        }
+        if(sch=="Diabetes")
+        {
+            a.innerHTML="<a href='https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3395295/'><h1>National programme on prevention of Diabetes</h1></a>";
+        }
+        break;
+    case "Rajasthan":
+        if(sch=="Burn")
+        {
+        a.innerHTML="<a href='https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3038407'><h1>National programme for prevention of burn injuries</h1></a>";
+        }
+        if(sch=="Cancer")
+        {
+        a.innerHTML="<a href='http://www.nihfw.org/NationalHealthProgramme/NATIONALCANCERCONTROLPROGRAMME.html'><h1>NATIONAL CANCER CONTROL PROGRAMME</h1></a>";
+        }
+        if(sch=="New Born")
+        {
+        a.innerHTML="<a href='https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4310710/'><h1>NEW BORN CARE SCHEME</h1></a>";
+        }
+        if(sch=="Kidney")
+        {
+            a.innerHTML="<a href='http://www.ambedkarfoundation.in/am/?id=1593818B2E47AE64&pg=10D0022F31DA6A07&nm=40870F6A2B6A2A3D80AB65D6A7B576F5'><h1>Dr. Ambedkar Medical Aid Scheme</h1></a>";
+        }
+        if(sch=="Deficiency")
+        {
+            a.innerHTML="<a href='https://www.nhp.gov.in/national-iodine-deficiency-disorders-control-progr_pg'><h1>National Iodine Deficiency Disorders Control</h1></a><br><a href='https://niti.gov.in/poshan-abhiyaan'><h1>POSHAN Abhiyaan</h1></a>";
+        }
+        if(sch=="Hiv/Aids")
+        {
+            a.innerHTML="<a href='http://naco.gov.in/nacp'><h1>National AIDS Control Programme</h1></a>";
+        }
+        if(sch=="Diabetes")
+        {
+            a.innerHTML="<a href='https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3395295/'><h1>National programme on prevention of Diabetes</h1></a>";
+        }
+        break;
+    case "Sikkim":
+        if(sch=="Burn")
+        {
+        a.innerHTML="<a href='https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3038407'><h1>National programme for prevention of burn injuries</h1></a>";
+        }
+        if(sch=="Cancer")
+        {
+        a.innerHTML="<a href='http://www.nihfw.org/NationalHealthProgramme/NATIONALCANCERCONTROLPROGRAMME.html'><h1>NATIONAL CANCER CONTROL PROGRAMME</h1></a>";
+        }
+        if(sch=="New Born")
+        {
+        a.innerHTML="<a href='https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4310710/'><h1>NEW BORN CARE SCHEME</h1></a>";
+        }
+        if(sch=="Kidney")
+        {
+            a.innerHTML="<a href='http://www.ambedkarfoundation.in/am/?id=1593818B2E47AE64&pg=10D0022F31DA6A07&nm=40870F6A2B6A2A3D80AB65D6A7B576F5'><h1>Dr. Ambedkar Medical Aid Scheme</h1></a>";
+        }
+        if(sch=="Deficiency")
+        {
+            a.innerHTML="<a href='https://www.nhp.gov.in/national-iodine-deficiency-disorders-control-progr_pg'><h1>National Iodine Deficiency Disorders Control</h1></a><br><a href='https://niti.gov.in/poshan-abhiyaan'><h1>POSHAN Abhiyaan</h1></a>";
+        }
+        if(sch=="Hiv/Aids")
+        {
+            a.innerHTML="<a href='http://naco.gov.in/nacp'><h1>National AIDS Control Programme</h1></a>";
+        }
+        if(sch=="Diabetes")
+        {
+            a.innerHTML="<a href='https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3395295/'><h1>National programme on prevention of Diabetes</h1></a>";
+        }
+        break;
+    case "Tamil Nadu":
+        if(sch=="Burn")
+        {
+        a.innerHTML="<a href='https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3038407'><h1>National programme for prevention of burn injuries</h1></a>";
+        }
+        if(sch=="Cancer")
+        {
+        a.innerHTML="<a href='http://www.nihfw.org/NationalHealthProgramme/NATIONALCANCERCONTROLPROGRAMME.html'><h1>NATIONAL CANCER CONTROL PROGRAMME</h1></a>";
+        }
+        if(sch=="New Born")
+        {
+        a.innerHTML="<a href='https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4310710/'><h1>NEW BORN CARE SCHEME</h1></a>";
+        }
+        if(sch=="Kidney")
+        {
+            a.innerHTML="<a href='http://www.ambedkarfoundation.in/am/?id=1593818B2E47AE64&pg=10D0022F31DA6A07&nm=40870F6A2B6A2A3D80AB65D6A7B576F5'><h1>Dr. Ambedkar Medical Aid Scheme</h1></a>";
+        }
+        if(sch=="Deficiency")
+        {
+            a.innerHTML="<a href='https://www.nhp.gov.in/national-iodine-deficiency-disorders-control-progr_pg'><h1>National Iodine Deficiency Disorders Control</h1></a><br><a href='https://niti.gov.in/poshan-abhiyaan'><h1>POSHAN Abhiyaan</h1></a>";
+        }
+        if(sch=="Hiv/Aids")
+        {
+            a.innerHTML="<a href='http://naco.gov.in/nacp'><h1>National AIDS Control Programme</h1></a>";
+        }
+        if(sch=="Diabetes")
+        {
+            a.innerHTML="<a href='https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3395295/'><h1>National programme on prevention of Diabetes</h1></a>";
+        }
+        break;
+    case "Tripura":
+        if(sch=="Burn")
+        {
+        a.innerHTML="<a href='https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3038407'><h1>National programme for prevention of burn injuries</h1></a><br><a href='https://www.gibl.in/government-scheme/atal-amrit-abhiyan.html'><h1>Atal Amrit Abhiyan Scheme</h1></a>";
+        }
+        if(sch=="Cancer")
+        {
+        a.innerHTML="<a href='http://www.nihfw.org/NationalHealthProgramme/NATIONALCANCERCONTROLPROGRAMME.html'><h1>NATIONAL CANCER CONTROL PROGRAMME</h1></a>";
+        }
+        if(sch=="New Born")
+        {
+        a.innerHTML="<a href='https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4310710/'><h1>NEW BORN CARE SCHEME</h1></a>";
+        }
+        if(sch=="Kidney")
+        {
+            a.innerHTML="<a href='http://www.ambedkarfoundation.in/am/?id=1593818B2E47AE64&pg=10D0022F31DA6A07&nm=40870F6A2B6A2A3D80AB65D6A7B576F5'><h1>Dr. Ambedkar Medical Aid Scheme</h1></a>";
+        }
+        if(sch=="Deficiency")
+        {
+            a.innerHTML="<a href='https://www.nhp.gov.in/national-iodine-deficiency-disorders-control-progr_pg'><h1>National Iodine Deficiency Disorders Control</h1></a><br><a href='https://niti.gov.in/poshan-abhiyaan'><h1>POSHAN Abhiyaan</h1></a>";
+        }
+        if(sch=="Hiv/Aids")
+        {
+            a.innerHTML="<a href='http://naco.gov.in/nacp'><h1>National AIDS Control Programme</h1></a>";
+        }
+        if(sch=="Diabetes")
+        {
+            a.innerHTML="<a href='https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3395295/'><h1>National programme on prevention of Diabetes</h1></a>";
+        }
+        break;
+    case "Uttar Pradesh":
+        if(sch=="Burn")
+        {
+        a.innerHTML="<a href='https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3038407'><h1>National programme for prevention of burn injuries</h1></a>";
+        }
+        if(sch=="Cancer")
+        {
+        a.innerHTML="<a href='http://www.nihfw.org/NationalHealthProgramme/NATIONALCANCERCONTROLPROGRAMME.html'><h1>NATIONAL CANCER CONTROL PROGRAMME</h1></a>";
+        }
+        if(sch=="New Born")
+        {
+        a.innerHTML="<a href='https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4310710/'><h1>NEW BORN CARE SCHEME</h1></a>";
+        }
+        if(sch=="Kidney")
+        {
+            a.innerHTML="<a href='http://www.ambedkarfoundation.in/am/?id=1593818B2E47AE64&pg=10D0022F31DA6A07&nm=40870F6A2B6A2A3D80AB65D6A7B576F5'><h1>Dr. Ambedkar Medical Aid Scheme</h1></a>";
+        }
+        if(sch=="Deficiency")
+        {
+            a.innerHTML="<a href='https://www.nhp.gov.in/national-iodine-deficiency-disorders-control-progr_pg'><h1>National Iodine Deficiency Disorders Control</h1></a><br><a href='https://niti.gov.in/poshan-abhiyaan'><h1>POSHAN Abhiyaan</h1></a>";
+        }
+        if(sch=="Hiv/Aids")
+        {
+            a.innerHTML="<a href='http://naco.gov.in/nacp'><h1>National AIDS Control Programme</h1></a>";
+        }
+        if(sch=="Diabetes")
+        {
+            a.innerHTML="<a href='https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3395295/'><h1>National programme on prevention of Diabetes</h1></a>";
+        }
+        break;
+    case "Uttrakhand":
+        if(sch=="Burn")
+        {
+        a.innerHTML="<a href='https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3038407'><h1>National programme for prevention of burn injuries</h1></a>";
+        }
+        if(sch=="Cancer")
+        {
+        a.innerHTML="<a href='http://www.nihfw.org/NationalHealthProgramme/NATIONALCANCERCONTROLPROGRAMME.html'><h1>NATIONAL CANCER CONTROL PROGRAMME</h1></a>";
+        }
+        if(sch=="New Born")
+        {
+        a.innerHTML="<a href='https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4310710/'><h1>NEW BORN CARE SCHEME</h1></a>";
+        }
+        if(sch=="Kidney")
+        {
+            a.innerHTML="<a href='http://www.ambedkarfoundation.in/am/?id=1593818B2E47AE64&pg=10D0022F31DA6A07&nm=40870F6A2B6A2A3D80AB65D6A7B576F5'><h1>Dr. Ambedkar Medical Aid Scheme</h1></a>";
+        }
+        if(sch=="Deficiency")
+        {
+            a.innerHTML="<a href='https://www.nhp.gov.in/national-iodine-deficiency-disorders-control-progr_pg'><h1>National Iodine Deficiency Disorders Control</h1></a><br><a href='https://niti.gov.in/poshan-abhiyaan'><h1>POSHAN Abhiyaan</h1></a>";
+        }
+        if(sch=="Hiv/Aids")
+        {
+            a.innerHTML="<a href='http://naco.gov.in/nacp'><h1>National AIDS Control Programme</h1></a>";
+        }
+        if(sch=="Diabetes")
+        {
+            a.innerHTML="<a href='https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3395295/'><h1>National programme on prevention of Diabetes</h1></a>";
+        }
+        break;
+    case "West Bengal":
+        if(sch=="Burn")
+        {
+        a.innerHTML="<a href='https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3038407'><h1>National programme for prevention of burn injuries</h1></a>";
+        }
+        if(sch=="Cancer")
+        {
+        a.innerHTML="<a href='http://www.nihfw.org/NationalHealthProgramme/NATIONALCANCERCONTROLPROGRAMME.html'><h1>NATIONAL CANCER CONTROL PROGRAMME</h1></a>";
+        }
+        if(sch=="New Born")
+        {
+        a.innerHTML="<a href='https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4310710/'><h1>NEW BORN CARE SCHEME</h1></a>";
+        }
+        if(sch=="Kidney")
+        {
+            a.innerHTML="<a href='http://www.ambedkarfoundation.in/am/?id=1593818B2E47AE64&pg=10D0022F31DA6A07&nm=40870F6A2B6A2A3D80AB65D6A7B576F5'><h1>Dr. Ambedkar Medical Aid Scheme</h1></a>";
+        }
+        if(sch=="Deficiency")
+        {
+            a.innerHTML="<a href='https://www.nhp.gov.in/national-iodine-deficiency-disorders-control-progr_pg'><h1>National Iodine Deficiency Disorders Control</h1></a><br><a href='https://niti.gov.in/poshan-abhiyaan'><h1>POSHAN Abhiyaan</h1></a>";
+        }
+        if(sch=="Hiv/Aids")
+        {
+            a.innerHTML="<a href='http://naco.gov.in/nacp'><h1>National AIDS Control Programme</h1></a>";
+        }
+        if(sch=="Diabetes")
+        {
+            a.innerHTML="<a href='https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3395295/'><h1>National programme on prevention of Diabetes</h1></a>";
+        }
+        break;
+    }
+</script>
+</html>

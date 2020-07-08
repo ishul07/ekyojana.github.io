@@ -1,0 +1,640 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+ <title>diseases</title>
+</head>
+
+<style type="text/css">
+
+
+*{
+ margin: 0px;
+ padding: 0px;
+ box-slicing:border-box;
+}
+body{
+ font-family: arial;
+ background-image: url("{% static 'team/back1.jpg' %}");
+ background-size: cover;
+}
+.main{
+
+ margin: 2%;
+}
+
+.card{
+     width: 20%;
+     display: inline-block;
+     box-shadow: 2px 2px 20px black;
+     border-radius: 5px;
+     margin: 2%;
+     background-color: black;
+     color: white;
+    }
+.image img{
+  width: 100%;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+ }
+
+.title{
+
+  text-align: center;
+  padding: 10px;
+  text-shadow: 2px 2px 5px red;
+
+ }
+
+h1{
+  font-size: 20px;
+ }
+
+.des{
+  padding: 3px;
+  margin: auto;
+  text-align: center;
+  padding-top: 10px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+button{
+  margin-top: 40px;
+  margin-bottom: 10px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding:10px;
+}
+input{
+	box-shadow: 2px 2px 20px red;
+	border-radius: 5px;
+	padding: 5px;
+}
+img{
+width:260px;
+height:175px;
+}
+input:hover{
+  background-color: black;
+  color: white;
+  text-shadow: 2px 2px 5px red;
+  transition: .5s;
+  font-style: italic;
+  cursor: pointer;
+}
+
+</style>
+<body>
+{% load static %}
+<form action="third" method="get">
+<div class="main">
+
+<!--cards -->
+
+
+<div class="card">
+
+<div class="image">
+   <img src="{% static 'team/Burn Injury.jpg' %}" id="img1"  onmouseover="changeStyle1()" onmouseout="changeStyle2()">
+</div>
+<div class="title">
+ <h1>
+BURN INJURY</h1>
+</div>
+    <div class="des">
+<input type="submit" name="submit" value="Burn">
+        </div>
+</div>
+
+<!--cards -->
+
+
+<div class="card">
+
+<div class="image">
+   <img src="{% static 'team/CANCER.jpeg' %}" id="img2"  onmouseover="changeStyle3()" onmouseout="changeStyle4()">
+</div>
+<div class="title">
+ <h1>
+CANCER</h1>
+</div>
+<div class="des">
+<input type="submit" name="submit" value="Cancer">
+</div>
+</div>
+
+<!--cards -->
+
+
+<div class="card">
+
+<div class="image">
+   <img src="{% static 'team/NEW BORN.jpg' %}" id="img3"  onmouseover="changeStyle5()" onmouseout="changeStyle6()">
+</div>
+<div class="title">
+ <h1>
+NEW BORN</h1>
+</div>
+<div class="des">
+<input type="submit" name="submit" value="New Born">
+</div>
+</div>
+
+
+<!--cards -->
+
+
+<div class="card">
+
+<div class="image">
+   <img src="{% static 'team/kidney.jpeg' %}" id="img4"  onmouseover="changeStyle7()" onmouseout="changeStyle8()">
+</div>
+<div class="title">
+ <h1>
+KIDNEY</h1>
+</div>
+<div class="des">
+<input type="submit" name="submit" value="Kidney">
+</div>
+</div>
+
+
+<!--cards -->
+
+
+<div class="card">
+
+<div class="image">
+   <img src="{% static 'team/DEFIECIENCY.jpg' %}" id="img5"  onmouseover="changeStyle9()" onmouseout="changeStyle10()">
+</div>
+<div class="title">
+ <h1>
+DEFICIENCY</h1>
+</div>
+<div class="des">
+<input type="submit" name="submit" value="Deficiency">
+</div>
+</div>
+
+<!--cards -->
+
+<div class="card">
+
+<div class="image">
+   <img src="{% static 'team/HIV.jpg' %}" id="img6"  onmouseover="changeStyle11()" onmouseout="changeStyle12()">
+</div>
+<div class="title">
+ <h1>
+HIV AIDS</h1>
+</div>
+<div class="des">
+<input type="submit" name="submit" value="Hiv/Aids">
+</div>
+</div>
+<!--cards -->
+
+
+<div class="card">
+
+<div class="image">
+   <img src="{% static 'team/diabetes.jpg' %}" alt="diabetes" id="img7"  onmouseover="changeStyle13()" onmouseout="changeStyle14()">
+</div>
+<div class="title">
+ <h1>
+DIABETES</h1>
+</div>
+<div class="des">
+<input type="submit" name="submit" value="Diabetes">
+</div>
+</div>
+<!--cards -->
+
+
+<div class="card">
+
+<div class="image">
+   <img src="{% static 'team/MENTAL HEALTH.png' %}" id="img8"  onmouseover="changeStyle15()" onmouseout="changeStyle16()">
+</div>
+<div class="title">
+ <h1>
+MENTAL HEALTH</h1>
+</div>
+<div class="des">
+<input type="submit" name="submit" value="Mental Health">
+</div>
+</div>
+
+
+
+
+<!--cards -->
+
+
+<div class="card">
+
+<div class="image">
+   <img src="{% static 'team/LEPROSY.jpg' %}"  id="img9"  onmouseover="changeStyle17()" onmouseout="changeStyle18()">
+</div>
+<div class="title">
+ <h1>
+LEPROSY</h1>
+</div>
+<div class="des">
+<input type="submit" name="submit" value="Leprosy">
+</div>
+</div>
+
+<!--cards -->
+
+<div class="card">
+
+<div class="image">
+   <img src="{% static 'team/birthdefect.jpeg' %}" id="img10"  onmouseover="changeStyle19()" onmouseout="changeStyle20()">
+</div>
+<div class="title">
+ <h1>
+BIRTH DEFECT</h1>
+</div>
+<div class="des">
+<input type="submit" name="submit" value="Birth Defect">
+</div>
+</div>
+
+<!--cards -->
+
+<div class="card">
+
+<div class="image">
+   <img src="{% static 'team/HEART.jpg' %}"  id="img11"  onmouseover="changeStyle21()" onmouseout="changeStyle22()">
+</div>
+<div class="title">
+ <h1>
+HEART ATTACK</h1>
+</div>
+<div class="des">
+<input type="submit" name="submit" value="Heart">
+</div>
+</div>
+<!--cards -->
+
+
+<div class="card">
+
+<div class="image">
+   <img src="{% static 'team/MATERNITY.jpg' %}"  id="img12"  onmouseover="changeStyle23()" onmouseout="changeStyle24()">
+</div>
+<div class="title">
+ <h1>
+MATERNITY</h1>
+</div>
+<div class="des">
+<input type="submit" name="submit" value="Maternity">
+</div>
+</div>
+
+<!--cards -->
+
+
+<div class="card">
+
+<div class="image">
+   <img src="{% static 'team/bone-marrow.jpg' %}" id="img13"  onmouseover="changeStyle25()" onmouseout="changeStyle26()">
+</div>
+<div class="title">
+ <h1>BONE MARROW</h1>
+</div>
+<div class="des">
+<input type="submit" name="submit" value="Bone Marrow">
+</div>
+</div>
+<!--cards -->
+
+
+<div class="card">
+
+<div class="image">
+   <img src="{% static 'team/Clinical tests.jpg' %}" id="img14"  onmouseover="changeStyle27()" onmouseout="changeStyle28()">
+</div>
+<div class="title">
+ <h1>CLINICAL TEST</h1>
+</div>
+<div class="des">
+<input type="submit" name="submit" value="Clinal Tests">
+</div>
+</div>
+<!--cards -->
+
+
+<div class="card">
+
+<div class="image">
+   <img src="{% static 'team/Sanitary-pads.jpg' %}" id="img15"  onmouseover="changeStyle29()" onmouseout="changeStyle30()">
+</div>
+<div class="title">
+ <h1>
+SANITARY PAD</h1>
+</div>
+<div class="des">
+<input type="submit" name="submit" value="Sanitary Pads">
+</div>
+</div>
+<!--cards -->
+
+
+<div class="card">
+
+<div class="image">
+   <img src="{% static 'team/Eyes.jpg' %}" id="img16"  onmouseover="changeStyle31()" onmouseout="changeStyle32()">
+</div>
+<div class="title">
+ <h1>
+EYES</h1>
+</div>
+<div class="des">
+<input type="submit" name="submit" value="Eyes">
+</div>
+</div>
+
+<!--cards -->
+
+
+<div class="card">
+
+<div class="image">
+   <img src="{% static 'team/POLIO.jpeg' %}" id="img17"  onmouseover="changeStyle33()" onmouseout="changeStyle34()">
+</div>
+<div class="title">
+ <h1>
+POLIO</h1>
+</div>
+<div class="des"><input type="submit" name="submit" value="Polio">
+</div>
+</div>
+<!--cards -->
+
+
+<div class="card">
+
+<div class="image">
+   <img src="{% static 'team/Lungs.jpg' %}"  id="img18"  onmouseover="changeStyle35()" onmouseout="changeStyle36()">
+</div>
+<div class="title">
+ <h1>
+LUNGS</h1>
+</div>
+<div class="des">
+ <input type="submit" name="submit" value="Lungs">
+</div>
+</div>
+<!--cards -->
+
+
+<div class="card">
+
+<div class="image">
+   <img src="{% static 'team/Urinary tract.jpg' %}" id="img19"  onmouseover="changeStyle37()" onmouseout="changeStyle38()">
+</div>
+<div class="title">
+ <h1>
+URINARY TRACT</h1>
+</div>
+<div class="des">
+<input type="submit" name="submit" value="Urinary Tract">
+</div>
+</div>
+
+<!--cards -->
+
+
+<div class="card">
+
+<div class="image">
+   <img src="{% static 'team/Brain.jpg' %}" id="img20"  onmouseover="changeStyle39()" onmouseout="changeStyle40()">
+</div>
+<div class="title">
+ <h1>
+BRAIN</h1>
+</div>
+<div class="des">
+<input type="submit" name="submit" value="Brain">
+</div>
+</div>
+
+
+<!--cards -->
+
+
+<div class="card">
+
+<div class="image">
+   <img src="{% static 'team/TB.jpg' %}" id="img21"  onmouseover="changeStyle41()" onmouseout="changeStyle42()">
+</div>
+<div class="title">
+ <h1>
+TB</h1>
+</div>
+<div class="des">
+<input type="submit" name="submit" value="TB">
+</div>
+</div>
+<!--cards -->
+
+
+<div class="card">
+
+<div class="image">
+   <img src="{% static 'team/Fertility.jpg'%}" id="img22"  onmouseover="changeStyle43()" onmouseout="changeStyle44()">
+</div>
+<div class="title">
+ <h1>FERTILITY</h1>
+</div>
+<div class="des">
+<input type="submit" name="submit" value="Fertility">
+</div>
+</div>
+
+    <!--cards -->
+
+
+<div class="card">
+
+<div class="image">
+   <img src="{% static 'team/Joints.jpg' %}" id="img23"  onmouseover="changeStyle45()" onmouseout="changeStyle46()">
+</div>
+<div class="title">
+ <h1>
+JOINTS</h1>
+</div>
+<div class="des">
+<input type="submit" name="submit" value="Joints">
+</div>
+</div>
+
+
+<!--cards -->
+<div class="card">
+
+<div class="image">
+   <img src="{% static 'team/health.jpg' %}" id="img24"  onmouseover="changeStyle47()" onmouseout="changeStyle48()">
+</div>
+<div class="title">
+ <h1>HEALTH INSURANCE
+</h1>
+</div>
+<div class="des">
+<input type="submit" name="submit" value="Health Insurance">
+</div>
+</div>
+
+<!--cards -->
+
+
+<div class="card">
+
+<div class="image">
+   <img src="{% static 'team/vector.jpg' %}" id="img25"  onmouseover="changeStyle49()" onmouseout="changeStyle50()">
+</div>
+<div class="title">
+ <h1>
+VECTOR BORN DISEASE</h1>
+</div>
+<div class="des">
+<input type="submit" name="submit" value="Vector Born Disease">
+</div>
+</div>
+
+<!--cards -->
+
+
+<div class="card">
+
+<div class="image">
+   <img src="{% static 'team/accident.png' %}" id="img26"  onmouseover="changeStyle51()" onmouseout="changeStyle52()">
+</div>
+<div class="title">
+ <h1>
+ACCIDENT</h1>
+</div>
+<div class="des">
+<input type="submit" name="submit" value="Accident">
+</div>
+</div>
+<!--cards -->
+
+
+<div class="card">
+
+<div class="image">
+   <img src="{% static 'team/casual.png' %}" id="img27"  onmouseover="changeStyle53()" onmouseout="changeStyle54()">
+</div>
+<div class="title">
+ <h1>
+CASUAL DISEASE</h1>
+</div>
+<div class="des">
+<input type="submit" name="submit" value="Casual Disease">
+</div>
+</div>
+<!--cards -->
+
+
+<div class="card">
+
+<div class="image">
+   <img src="{% static 'team/Life Threatening.jpg' %}" id="img28"  onmouseover="changeStyle55()" onmouseout="changeStyle56()">
+</div>
+<div class="title">
+ <h1>
+LIFE THREATENING</h1>
+</div>
+<div class="des">
+<input type="submit" name="submit" value="Life Theatening">
+</div>
+</div>
+
+<!--cards -->
+
+
+<div class="card">
+
+<div class="image">
+   <img src="{% static 'team/Non.png' %}" id="img29"  onmouseover="changeStyle57()" onmouseout="changeStyle58()">
+</div>
+<div class="title">
+ <h1>
+NON COMMUNICABLE</h1>
+</div>
+<div class="des">
+<input type="submit" name="submit" value="Non Communicable">
+</div>
+</div>
+
+
+<!--cards -->
+<div class="card">
+
+<div class="image">
+   <img src="{% static 'team/Plastic.png' %}" id="img30"  onmouseover="changeStyle59()" onmouseout="changeStyle60()">
+</div>
+<div class="title">
+ <h1>PLASTIC SURGERY
+</h1>
+</div>
+<div class="des">
+<input type="submit" name="submit" value="Plastic Surgery">
+</div>
+</div>
+<!--cards -->
+
+
+<div class="card">
+
+<div class="image">
+   <img src="{% static 'team/ortho.png' %}" id="img31"  onmouseover="changeStyle61()" onmouseout="changeStyle62()">
+</div>
+<div class="title">
+ <h1>
+ORTHOPAEDIC</h1>
+</div>
+<div class="des">
+<input type="submit" name="submit" value="Orthopaedic">
+</div>
+</div>
+<!--cards -->
+
+
+<div class="card">
+
+<div class="image">
+   <img src="{% static 'team/Disability.png' %}" id="img32"  onmouseover="changeStyle63()" onmouseout="changeStyle64()">
+</div>
+<div class="title">
+ <h1>
+DISABILITY</h1>
+</div>
+<div class="des">
+<input type="submit" name="submit" value="Disability">
+</div>
+</div>
+<!--cards -->
+<div class="card">
+
+<div class="image">
+   <img src="{% static 'team/plague.jpg' %}" id="img33"  onmouseover="changeStyle65()" onmouseout="changeStyle66()">
+</div>
+<div class="title">
+ <h1>PLAGUE</h1>
+</div>
+<div class="des">
+<input type="submit" name="submit" value="Plague">
+</div>
+</div>
+
+
+</div>
+    </form>
+</body>
+<script  src="{% static 'js/jscode.js' %}" >
+	</script>
+</html>

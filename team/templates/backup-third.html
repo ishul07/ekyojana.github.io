@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+    body{
+            background-image: url("{% static 'team/logo1.png' %}");
+            background-repeat: no-repeat;
+            }
+    </style>
+    <marquee><h1>{{sname}} {{scheme}} Schemes</h1></marquee>
+</head>
+<body>
+    <div id="sta">
+
+    </div>
+</body>
+<script type="text/javascript">
+    var st="{{sname}}";
+    var sch="{{scheme}}";
+    var a=document.getElementById("sta");
+    if(st=="Andhra Pradesh")
+    {
+        if(sch=="Burn")
+        {
+        a.innerHTML="<a href='https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3038407'>National programme for prevention of burn injuries</a>"
+        }
+        else
+        {
+        a.innerHTML="<h1>NOT SET</h1>"
+        }
+    }
+</script>
+</html>

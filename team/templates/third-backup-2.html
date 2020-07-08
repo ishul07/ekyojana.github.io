@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+		*{
+			margin:0px;
+			padding: 0px;
+		}
+		body{
+			background-image: url("{% static 'team/img.jpeg' %}");
+			background-size: 1365px 700px;
+		}
+		#main{
+			margin-top: 280px;
+			margin-left: 400px;
+		}
+		.heading:hover{
+			box-shadow: 8px 8px 20px red;
+			border-radius: 5px;
+			padding: 5px;
+			width:510px;
+			l
+		}
+		a
+		{
+		 text-decoration:None;
+		 color:black;
+		}
+		a:hover{
+		  color:red;
+		}
+		#main:hover{
+		    box-shadow: 4px 4px 10px red;
+			border-radius: 5px;
+			color:red;
+			width:730px;
+		}
+		#heading{
+		font-size:100px;
+		color:rgb(12,233,200);
+		text-shadow:8px 8px 20px red;
+		}
+	</style>
+    <marquee><h1 id="heading">{{sname}} {{scheme}} Schemes</h1></marquee>
+</head>
+<body>
+    <div id="main">
+
+    </div>
+</body>
+<script type="text/javascript">
+    var st="{{sname}}";
+    var sch="{{scheme}}";
+    var a=document.getElementById("main");
+    if(st=="Andhra Pradesh")
+    {
+        if(sch=="Burn")
+        {
+        a.innerHTML="<a href='https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3038407'><h1>National programme for prevention of burn injuries</h1></a>";
+        }
+        if(sch=="Cancer")
+        {
+        a.innerHTML="<a href='http://www.nihfw.org/NationalHealthProgramme/NATIONALCANCERCONTROLPROGRAMME.html'><h1>NATIONAL CANCER CONTROL PROGRAMME</h1></a>";
+        }
+        if(sch=="New Born")
+        {
+        a.innerHTML="<a href='https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4310710/'><h1>NEW BORN CARE SCHEME</h1></a>";
+        }
+
+    }
+</script>
+</html>
